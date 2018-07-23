@@ -4,34 +4,43 @@
     {
         public string Convert(int number)
         {
-            string roman = "";
-
-            if (number == 10)
+            if(number == 100)
             {
-                roman = "X";
-                return roman;
+                return "C";
             }
-            if (number == 9)
+            if(number >= 90)
             {
-                roman = "IX";
-                return roman;
+                return "XC" + Convert(number - 90);
+            }
+            if(number >= 50)
+            {
+                return "L" + Convert(number - 50);
+            }
+            if (number >= 40)
+            {
+                return "XL" + Convert(number - 40);
+            }
+            if (number >= 10)
+            {
+                return "X" + Convert(number - 10);
+            }
+            if (number >= 9)
+            {
+                return "IX" + Convert(number - 9);
             }
             if (number >= 5)
             {
-                roman = "V" + Convert(number - 5);
-                return roman;
+                return "V" + Convert(number - 5);
             }
             if (number >= 4)
             {
-                roman = "IV" + Convert(number -4);
-                return roman;
+                return "IV" + Convert(number -4);
             }
             if (number >= 1)
             {
-                roman = "I" + Convert(number -1);
-                return roman;
+                return "I" + Convert(number -1);
             }
-            return roman;
+            return "";
         }
     }
 }
