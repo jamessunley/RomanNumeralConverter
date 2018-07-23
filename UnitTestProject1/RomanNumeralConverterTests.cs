@@ -366,5 +366,137 @@ namespace ConverterTests
             // I get back "C"
             Assert.AreEqual("C", roman);
         }
+
+        [TestMethod]
+        public void Given_I_Have_101_Return_CI()
+        {
+            // Given I have the value 101
+            int number = 101;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CI"
+            Assert.AreEqual("CI", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_111_Return_CXI()
+        {
+            // Given I have the value 111
+            int number = 111;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CXI"
+            Assert.AreEqual("CXI", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_200_Return_CC()
+        {
+            // Given I have the value 200
+            int number = 200;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CC"
+            Assert.AreEqual("CC", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_390_Return_CCCXC()
+        {
+            // Given I have the value 200
+            int number = 390;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CCCXC"
+            Assert.AreEqual("CCCXC", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_400_Return_CD()
+        {
+            // Given I have the value 400
+            int number = 400;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CD"
+            Assert.AreEqual("CD", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_450_Return_CDL()
+        {
+            // Given I have the value 450
+            int number = 450;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CDL"
+            Assert.AreEqual("CDL", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_500_Return_D()
+        {
+            // Given I have the value 500
+            int number = 500;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "D"
+            Assert.AreEqual("D", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_600_Return_DC()
+        {
+            // Given I have the value 600
+            int number = 600;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "DC"
+            Assert.AreEqual("DC", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_900_Return_CM()
+        {
+            // Given I have the value 900
+            int number = 900;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CM"
+            Assert.AreEqual("CM", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_950_Return_CML()
+        {
+            // Given I have the value 950
+            int number = 950;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "CML"
+            Assert.AreEqual("CML", roman);
+        }
+
+        [TestMethod]
+        public void Given_I_Have_1000_Return_M()
+        {
+            // Given I have the value 1000
+            int number = 1000;
+            // When I pass the value in to the roman numeral converter
+            IRomanNumeralConverter romanNumeralConverter = new RomanNumeralConverter();
+            string roman = romanNumeralConverter.Convert(number);
+            // I get back "M"
+            Assert.AreEqual("M", roman);
+        }
     }
 }

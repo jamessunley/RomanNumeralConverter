@@ -7,9 +7,30 @@
             string roman = "";
             while (number > 0)
             {
-                if (number == 100)
+                if (number >= 1000)
                 {
-                    return "C";
+                    number = number - 1000;
+                    roman += "M";
+                }
+                if (number >= 900 && number < 1000)
+                {
+                    number = number - 900;
+                    roman += "CM";
+                }
+                if (number >= 500 && number < 900)
+                {
+                    number = number - 500;
+                    roman += "D";
+                }
+                if (number >= 400 && number < 500)
+                {
+                    number = number - 400;
+                    roman += "CD";
+                }
+                if (number >= 100 && number < 400)
+                {
+                    number = number - 100;
+                    roman += "C";
                 }
                 if (number >= 90 && number < 100)
                 {
@@ -54,9 +75,25 @@
             }
             return roman;
 
+            //if(number == 1000)
+            //{
+            //    return "M" + Convert(number - 1000);
+            //}
+            //if(number == 900)
+            //{
+            //    return "CM" + Convert(number - 900);
+            //}
+            //if(number == 500)
+            //{
+            //    return "D" + Convert(number - 500);
+            //}
+            //if(number == 400)
+            //{
+            //    return "CD" + Convert(number - 400);
+            //}
             //if(number == 100)
             //{
-            //    return "C";
+            //    return "C" + Convert(number - 100);
             //}
             //if(number >= 90)
             //{
