@@ -68,7 +68,7 @@ namespace ConverterTests
         }
 
         [TestMethod]
-        public void Given_I_Have_8_Return_IX()
+        public void Given_I_Have_8_Return_VII()
         {
             // Given I have the value 8
             int number = 8;
